@@ -57,3 +57,17 @@
 }
 
 
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text-content {
+  flex-basis: 60%; /* Ajusta según sea necesario */
+}
+
+.image-content {
+  flex-basis: 40%; /* Ajusta según sea necesario */
+}
+
