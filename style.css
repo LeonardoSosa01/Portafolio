@@ -21,7 +21,7 @@
 
 .logo {
   font-size: 25px;
-  padding-left: 280px;
+  padding-left: 10%;
 }
 
 .nav-opciones {
@@ -56,13 +56,14 @@
 /* main */
 .main {
   display: flex;
+  max-width: 100%;
 }
 
 .container {
   display: flex;
   justify-content: space-between;
-  padding-top: 100px;
-  gap: 100px;
+  padding-top: 200px;
+  max-width: 80%
 }
 
 .left-content {
@@ -92,8 +93,10 @@ span.name {
   font-size: 60px;
 }
 
-h2 {
+.uxui{
   font-size: 50px;
+  border-right: 3px solid #ff014f;
+  padding-right: 2px;
 }
 
 .description {
@@ -103,13 +106,14 @@ h2 {
 
 .skill-links {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   margin-top: 100px;
 }
 
 .icon-content1 {
   display: block;
   flex-direction: column;
+  padding-right: 50%;
 }
 .icon-content2 {
   display: block;
