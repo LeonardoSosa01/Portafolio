@@ -3,3 +3,34 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+}
+
+.logo {
+  font-size: 24px;
+}
+
+.nav-opciones{
+  display: flex;
+  align-items: center;
+}
+
+
+.nav-items li {
+ display:inline; 
+ align-content: center;
+ margin-right:30px; 
+ font-size:14px; 
+}
+
+.buy-now{
+ background-color:red; 
+ color:white; 
+ border:1px solid black; 
+ padding:10px 20px; 
+}
