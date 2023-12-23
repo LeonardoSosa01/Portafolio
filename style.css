@@ -2,17 +2,31 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: #ECF0F3;
+  font-family: 'DM Sans', sans-serif;
+  font-family: 'Kanit', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Oswald', sans-serif;
 }
+
+
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@1,9..40,200&family=Kanit:wght@300;400;500&family=Open+Sans:wght@400;600&family=Oswald:wght@400;500&display=swap');
+
+:root {
+--textcolorpri:#505356;
+}
+
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 50px;
+  padding: 40px 30px;
 }
 
 .logo {
-  font-size: 24px;
+  font-size: 40px;
+  padding-left: 100px;
 }
 
 .nav-opciones{
@@ -20,6 +34,11 @@
   align-items: center;
 }
 
+.nav-items a{
+  text-decoration: none;
+  color:var(--textcolorpri);
+  font-size: 20px;
+}
 
 .nav-items li {
  display:inline; 
@@ -29,8 +48,12 @@
 }
 
 .buy-now{
- background-color:red; 
- color:white; 
- border:1px solid black; 
+  font-size: 20px;
+ color: #FA3E78;
+ border: none;
  padding:10px 20px; 
+ border-radius: 10px;
+ box-shadow: 10px 10px 25px 10px #d2d7dd
 }
+
+
