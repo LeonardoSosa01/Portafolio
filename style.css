@@ -87,6 +87,7 @@ h1 {
 
 .name {
   color: #ff014f;
+  font-size: 15px;
 }
 
 span.name {
@@ -115,6 +116,7 @@ span.name {
   flex-direction: column;
   padding-right: 50%;
 }
+
 .icon-content2 {
   display: block;
   flex-direction: column;
@@ -161,10 +163,13 @@ gap: 50px;
   gap: 50px;
 }
 .card {
-  width: 200px;
-  height: 200px;
+  display: flex;
+  align-items: center;
+  width: 50%;
+  height: 50%;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 50px;
 }
 .card h3 {
   text-align: center;
