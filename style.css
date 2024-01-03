@@ -204,7 +204,7 @@ WHAT I DO*/
   justify-content: center;
   border-style: none;
   border-radius: 20px;
-  box-shadow:  5px 5px 25px 0px  #d2d7dd;
+  box-shadow: 5px 5px 25px 0px #d2d7dd;
   padding: 0 50px;
 }
 .card h3 {
@@ -222,9 +222,7 @@ WHAT I DO*/
 .loquehago .card i {
   color: var(--textcolorsecu);
   margin: 20px;
-
 }
-
 
 /* seccion de tarjetas 
 MY portafolio*/
@@ -237,74 +235,70 @@ MY portafolio*/
   gap: 50px;
 }
 
-.banner-myp{
+.banner-myp {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.banner-myp p{
-color: var(--textcolorsecu);
-font-size: 20px;
-letter-spacing: 1px;
+.banner-myp p {
+  color: var(--textcolorsecu);
+  font-size: 20px;
+  letter-spacing: 1px;
 }
 
-.banner-myp h2{
+.banner-myp h2 {
   font-size: 70px;
 }
 
-.main-text{
+.main-text {
   display: flex;
   justify-content: space-between;
-  gap: 200px;
+  padding-top: 20px;
+  gap: 230px;
 }
 
-.main-text p{
+.main-text p {
   color: var(--textcolorsecu);
   font-size: 15px;
 }
 
-.main-text h4{
-  display: flex;
+.ambos-grupo-mp h4 {
+  font-size: 29px;
   text-decoration: none;
-  height: 300px;
-  width: 300px;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
+  padding-bottom: 20px;
 }
 
-.ambos-grupo-mp{
-   display: flex;
-   flex-direction: column;
-  }
+.ambos-grupo-mp {
+  display: flex;
+  flex-direction: column;
+}
 
-.primer-grupo-mp{
+.primer-grupo-mp {
   display: flex;
   gap: 50px;
   padding-bottom: 50px;
 }
 
-
-.segundo-grupo-mp{
+.segundo-grupo-mp {
   display: flex;
   gap: 50px;
+  padding-bottom: 50px;
 }
 
 .ambos-grupo-mp .card {
   display: flex;
-  justify-content: center;
-  max-width: 100%;
+  justify-content: space-between;
+  align-items: center;
   height: 450px;
   width: 400px;
-  gap: 10px;
+  padding: 30px;
 }
 
-
-.ambos-grupo-mp img{
-  display: flex;
+.ambos-grupo-mp img {
   position: relative;
-justify-content: center;
   height: 220px;
-  width: 300px;
-  border-radius: 5%;
+  width: 340px;
+  border-radius: 2%;
 }
-
