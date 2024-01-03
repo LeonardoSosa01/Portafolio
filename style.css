@@ -62,7 +62,7 @@
 .container {
   display: flex;
   justify-content: space-between;
-  padding-top: 200px;
+  padding-top: 100px;
   max-width: 80%;
 }
 
@@ -175,9 +175,10 @@ WHAT I DO*/
 .banner {
   width: 100%;
   text-align: start;
+  padding-left: 100px;
 }
 .banner H2 {
-  font-size: 100px;
+  font-size: 80px;
   color: var(--textcolorpri);
 }
 
@@ -197,12 +198,12 @@ WHAT I DO*/
 }
 
 .card {
-  height: 400px;
+  height: 350px;
   width: 400px;
   display: flex;
-  align-items: flex-start;
   justify-content: center;
-  border-radius: 10px;
+  border-style: none;
+  border-radius: 20px;
   box-shadow:  5px 5px 25px 0px  #d2d7dd;
   padding: 0 50px;
 }
@@ -214,12 +215,14 @@ WHAT I DO*/
 }
 
 .card p {
-  font-size: 25px;
+  font-size: 20px;
+  color: var(--textcolorpri);
 }
 
 .loquehago .card i {
   color: var(--textcolorsecu);
   margin: 20px;
+
 }
 
 
@@ -232,7 +235,6 @@ MY portafolio*/
   align-items: center;
   padding: 200px;
   gap: 50px;
-  max-width: 100%;
 }
 
 .banner-myp{
@@ -244,19 +246,65 @@ MY portafolio*/
 .banner-myp p{
 color: var(--textcolorsecu);
 font-size: 20px;
+letter-spacing: 1px;
 }
 
 .banner-myp h2{
-  font-size: 100px;
+  font-size: 70px;
 }
 
 .main-text{
   display: flex;
   justify-content: space-between;
-  gap: 150px;
+  gap: 200px;
 }
 
 .main-text p{
   color: var(--textcolorsecu);
   font-size: 15px;
 }
+
+.main-text h4{
+  display: flex;
+  text-decoration: none;
+  height: 300px;
+  width: 300px;
+  letter-spacing: 2px;
+}
+
+.ambos-grupo-mp{
+   display: flex;
+   flex-direction: column;
+  }
+
+.primer-grupo-mp{
+  display: flex;
+  gap: 50px;
+  padding-bottom: 50px;
+}
+
+
+.segundo-grupo-mp{
+  display: flex;
+  gap: 50px;
+}
+
+.ambos-grupo-mp .card {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  height: 450px;
+  width: 400px;
+  gap: 10px;
+}
+
+
+.ambos-grupo-mp img{
+  display: flex;
+  position: relative;
+justify-content: center;
+  height: 220px;
+  width: 300px;
+  border-radius: 5%;
+}
+
