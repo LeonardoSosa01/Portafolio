@@ -301,4 +301,176 @@ MY portafolio*/
   height: 220px;
   width: 340px;
   border-radius: 2%;
+  object-fit: cover;
+}
+
+/* SECCION MY RESUME*/
+.myresume-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.myresume-main span {
+  color: var(--textcolorsecu);
+}
+
+.myresume-main h2 {
+  font-size: 70px;
+}
+
+.myresume-main button {
+  padding: 50px 120px;
+}
+
+.my-botones a {
+  color: black;
+  text-decoration: none;
+}
+
+
+
+
+
+/* Hasta aqui los botones, ahora seguire con el breve texto */
+
+.myresume-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.myresume-text1 {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+}
+.myresume-text1 p {
+  color: var(--textcolorsecu);
+}
+
+.myresume-text2 {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+}
+
+.myresume-text2 p {
+  color: var(--textcolorsecu);
+}
+
+/* seccion intentando hacer los bordes tipo linea temporal*/
+
+.container-lineas {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-items: start;
+  padding-left: 50px;
+}
+
+.container-lineas .palito {
+  height: 400px;
+  width: 5px;
+  position: relative;
+  border: 1px solid #dadee3;
+  background-color: #dadee3;
+}
+
+.container-lineas .palito-der {
+  height: 5px;
+  width: 40px;
+  position: relative;
+  bottom: 215px;
+  left: 10px;
+  border: 1px solid #dadee3;
+  background-color: #dadee3;
+}
+
+.container-lineas .circulo {
+  height: 25px;
+  width: 25px;
+  border: 5px solid #dadee3;
+  border-radius: 50%;
+  position: relative;
+  bottom: 200px;
+  right: 10px;
+  background-color: white;
+}
+
+/*doy por terminado el borde temporal*/
+
+.container-full-ambos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.container-full-izq {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container-full-der {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+.container-card {
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+  gap: 50;
+}
+
+.card-my {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border: 2px solid var(--textcolorpri);
+  height: 300px;
+  width: 600px;
+  padding: 10px;
+  margin: 50px 0px;
+  border-style: none;
+  border-radius: 10px;
+  box-shadow: 5px 15px 25px 15px #d2d7dd;
+}
+
+.my-span {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  padding-right: 50px;
+}
+
+.my-span .color {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.color {
+  border-radius: 10px;
+  box-shadow: 20px 5px 40px 10px #d2d7dd;
+  color: var(--textcolorsecu);
+  padding: 10px 15px;
+}
+
+
+.container-derecha{
+  display: flex;
+  justify-content: center;
+}
+
+.container-izquierda{
+  display: flex;
+  justify-content: center;
 }
