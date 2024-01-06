@@ -256,55 +256,74 @@ MY portafolio*/
 
 .banner-myp p {
   color: var(--textcolorsecu);
-  font-size: 20px;
+  font-size: 15px;
   letter-spacing: 1px;
 }
 
 .banner-myp h2 {
-  font-size: 70px;
+  font-size: 60px;
+  font-family: kanit;
+  color: var(--textcolorpri);
+}
+
+.card-myporta {
+  display: flex;
+flex-direction: column;
+  height: 350px;
+  width: 400px;
+  border-style: none;
+  border-radius: 20px;
+  box-shadow: 5px 5px 25px 0px #d2d7dd;
+  padding: 0 50px;
 }
 
 
 .main-text {
   display: flex;
   justify-content: space-between;
-  padding-top: 20px;
-  gap: 230px;
+  gap: 200px;
 }
 
 .main-text p {
+  display: flex;
+align-items: center;
   color: var(--textcolorsecu);
   font-size: 15px;
+  font-family: kanit;
 }
 
 .ambos-grupo-mp h4 {
-  font-size: 29px;
+  font-size: 25px;
   text-decoration: none;
   letter-spacing: 1px;
   padding-bottom: 20px;
+  font-family: kanit;
 }
 
 .ambos-grupo-mp {
   display: flex;
   flex-direction: column;
+  padding-top: 50px;
 }
+
 
 .primer-grupo-mp {
   display: flex;
+  justify-content: center;
   gap: 50px;
   padding-bottom: 50px;
 }
 
 .segundo-grupo-mp {
   display: flex;
+  justify-content: center;
   gap: 50px;
   padding-bottom: 50px;
 }
 
-.ambos-grupo-mp .card {
+.ambos-grupo-mp .card-myporta {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   height: 450px;
   width: 400px;
   padding: 30px;
@@ -314,7 +333,8 @@ MY portafolio*/
   position: relative;
   height: 220px;
   width: 340px;
-  border-radius: 2%;
+  border-top-right-radius: 5%;
+  border-top-left-radius: 5%;
   object-fit: cover;
 }
 
@@ -334,14 +354,14 @@ MY portafolio*/
 
 .myresume-main h2 {
   font-size: 70px;
-font-weight: 600;
+  font-weight: 600;
 }
 
 .myresume-main button {
   padding: 30px 120px;
 }
 
-.my-botones{
+.my-botones {
   display: flex;
 }
 
@@ -353,30 +373,29 @@ font-weight: 600;
 }
 
 .myresu-boton-especial {
-border-radius: 15px;
-border: none;
-box-shadow: 10px 5px 10px 0px rgba(210,215,221,1);
-position: relative;
-left: 5px;
+  border-radius: 15px;
+  border: none;
+  box-shadow: 10px 5px 10px 0px rgba(210, 215, 221, 1);
+  position: relative;
+  left: 5px;
 }
 
-.myresu-boton-especial a{
+.myresu-boton-especial a {
   color: var(--textcolorsecu);
 }
 
-.myresu-boton-especial2{
+.myresu-boton-especial2 {
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   border: none;
-  box-shadow: 3px 5px 10px 0px rgba(210,215,221,1);
+  box-shadow: 3px 5px 10px 0px rgba(210, 215, 221, 1);
 }
 
-.myresu-boton-normal{
+.myresu-boton-normal {
   border: none;
   border-radius: 0px;
-  box-shadow: 10px 5px 10px 0px rgba(210,215,221,1);
+  box-shadow: 10px 5px 10px 0px rgba(210, 215, 221, 1);
 }
-
 
 /* Hasta aqui los botones, ahora seguire con el breve texto */
 
@@ -395,7 +414,7 @@ left: 5px;
   color: var(--textcolorsecu);
 }
 
-.myresume-text1 h2{
+.myresume-text1 h2 {
   font-weight: 500;
   font-size: 40px;
   font-family: kanit;
@@ -411,7 +430,7 @@ left: 5px;
   color: var(--textcolorsecu);
 }
 
-.myresume-text2 h2{
+.myresume-text2 h2 {
   font-weight: 500;
   font-size: 40px;
   font-family: kanit;
@@ -422,8 +441,6 @@ left: 5px;
 .container-lineas {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
   align-items: start;
   padding-left: 50px;
 }
@@ -440,7 +457,7 @@ left: 5px;
   height: 5px;
   width: 40px;
   position: relative;
-  bottom: 315px;
+  bottom: 316px;
   left: 10px;
   border: 1px solid #dadee3;
   background-color: #dadee3;
@@ -449,11 +466,11 @@ left: 5px;
 .container-lineas .circulo {
   height: 25px;
   width: 25px;
-  border: 5px solid #dadee3;
   border-radius: 50%;
   position: relative;
   bottom: 300px;
   right: 10px;
+  border: 5px solid #dadee3;
   background-color: white;
 }
 
@@ -482,7 +499,7 @@ left: 5px;
   display: flex;
   flex-direction: column;
   padding-left: 15px;
-  gap: 50;
+  gap: 50px;
 }
 
 .card-my {
@@ -519,6 +536,7 @@ left: 5px;
   box-shadow: 20px 5px 40px 10px #d2d7dd;
   color: var(--textcolorsecu);
   padding: 10px 15px;
+  font-weight: 500;
 }
 
 .container-derecha {
@@ -555,22 +573,25 @@ left: 5px;
   display: flex;
   justify-content: center;
   padding-bottom: 300px;
+  padding-top: 100px;
   gap: 50px;
 }
 
 .container-blog-card {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   height: 450px;
   width: 400px;
-  border: 1px solid black;
   padding: 0px 50px;
-  border-radius: 10px;
+  border-radius: 5%;
+  box-shadow: 5px 5px 10px 10px rgba(210, 215, 221, 1);
 }
 
 .container-blog-card img {
   position: relative;
+  bottom: 40px;
+  left: 10px;
   height: 220px;
   width: 340px;
   border-radius: 2%;
@@ -580,4 +601,8 @@ left: 5px;
 .myblog-span {
   display: flex;
   justify-content: space-between;
+}
+
+.myblog-span .blog-color{
+  color: var(--textcolorsecu);
 }
