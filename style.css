@@ -2,8 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Kanit', sans-serif;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Kanit", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* variables */
@@ -22,7 +22,7 @@
 
 .logo {
   font-size: 25px;
-  padding-left: 10%;
+  padding-left: 15%;
   font-family: Kanit;
 }
 
@@ -50,9 +50,9 @@
   font-size: 15px;
   color: var(--textcolorsecu);
   border: none;
-  padding: 10px 20px;
-  border-radius: 10px;
-  box-shadow: 10px 10px 40px 10px #d2d7dd;
+  padding: 10px 25px;
+  border-radius: 5px;
+  box-shadow: 2px 5px 5px 2px #d2d7dd;
   font-family: Kanit;
 }
 
@@ -117,12 +117,12 @@ span.name {
   gap: 20%;
 }
 
-.skill-links p{
+.skill-links p {
   font-family: Kanit;
   font-weight: 400;
 }
 
-.iconos1 a{
+.iconos1 a {
   text-decoration: none;
   color: var(--textcolorpri);
   width: 10px;
@@ -158,13 +158,12 @@ span.name {
 
 .icon-content1 {
   display: flex;
-flex-direction: column;
-
+  flex-direction: column;
 }
 
 .icon-content2 {
-display: flex;
-flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .skill-links i {
@@ -265,6 +264,7 @@ MY portafolio*/
   font-size: 70px;
 }
 
+
 .main-text {
   display: flex;
   justify-content: space-between;
@@ -323,24 +323,60 @@ MY portafolio*/
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 20px;
 }
 
 .myresume-main span {
   color: var(--textcolorsecu);
+  font-family: kanit;
+  letter-spacing: 2px;
 }
 
 .myresume-main h2 {
   font-size: 70px;
+font-weight: 600;
 }
 
 .myresume-main button {
-  padding: 50px 120px;
+  padding: 30px 120px;
+}
+
+.my-botones{
+  display: flex;
 }
 
 .my-botones a {
   color: black;
   text-decoration: none;
+  font-weight: 400;
+  font-family: kanit;
 }
+
+.myresu-boton-especial {
+border-radius: 15px;
+border: none;
+box-shadow: 10px 5px 10px 0px rgba(210,215,221,1);
+position: relative;
+left: 5px;
+}
+
+.myresu-boton-especial a{
+  color: var(--textcolorsecu);
+}
+
+.myresu-boton-especial2{
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border: none;
+  box-shadow: 3px 5px 10px 0px rgba(210,215,221,1);
+}
+
+.myresu-boton-normal{
+  border: none;
+  border-radius: 0px;
+  box-shadow: 10px 5px 10px 0px rgba(210,215,221,1);
+}
+
 
 /* Hasta aqui los botones, ahora seguire con el breve texto */
 
@@ -359,6 +395,12 @@ MY portafolio*/
   color: var(--textcolorsecu);
 }
 
+.myresume-text1 h2{
+  font-weight: 500;
+  font-size: 40px;
+  font-family: kanit;
+}
+
 .myresume-text2 {
   display: flex;
   flex-direction: column;
@@ -367,6 +409,12 @@ MY portafolio*/
 
 .myresume-text2 p {
   color: var(--textcolorsecu);
+}
+
+.myresume-text2 h2{
+  font-weight: 500;
+  font-size: 40px;
+  font-family: kanit;
 }
 
 /* seccion intentando hacer los bordes tipo linea temporal*/
@@ -392,7 +440,7 @@ MY portafolio*/
   height: 5px;
   width: 40px;
   position: relative;
-  bottom: 215px;
+  bottom: 315px;
   left: 10px;
   border: 1px solid #dadee3;
   background-color: #dadee3;
@@ -404,7 +452,7 @@ MY portafolio*/
   border: 5px solid #dadee3;
   border-radius: 50%;
   position: relative;
-  bottom: 200px;
+  bottom: 300px;
   right: 10px;
   background-color: white;
 }
@@ -483,10 +531,9 @@ MY portafolio*/
   justify-content: center;
 }
 
-
 /*Comienzo con la seccion MY BLOG*/
 
-.myblog{
+.myblog {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -494,36 +541,35 @@ MY portafolio*/
   padding-top: 200px;
 }
 
-.myblog h2{
+.myblog h2 {
   font-size: 70px;
 }
 
-.myblog p{
+.myblog p {
   color: var(--textcolorsecu);
   letter-spacing: 3px;
   font-size: 15px;
 }
 
-.container-blog{
+.container-blog {
   display: flex;
   justify-content: center;
   padding-bottom: 300px;
   gap: 50px;
 }
 
-.container-blog-card{
+.container-blog-card {
   display: flex;
   flex-direction: column;
-justify-content: space-around;
+  justify-content: space-around;
   height: 450px;
   width: 400px;
   border: 1px solid black;
   padding: 0px 50px;
   border-radius: 10px;
-
 }
 
-.container-blog-card img{
+.container-blog-card img {
   position: relative;
   height: 220px;
   width: 340px;
@@ -531,7 +577,7 @@ justify-content: space-around;
   object-fit: cover;
 }
 
-.myblog-span{
+.myblog-span {
   display: flex;
   justify-content: space-between;
 }
