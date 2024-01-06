@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Oswald", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* variables */
@@ -328,10 +328,6 @@ MY portafolio*/
   text-decoration: none;
 }
 
-
-
-
-
 /* Hasta aqui los botones, ahora seguire con el breve texto */
 
 .myresume-text {
@@ -401,7 +397,7 @@ MY portafolio*/
 
 /*doy por terminado el borde temporal*/
 
-.container-full-ambos{
+.container-full-ambos {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -419,7 +415,6 @@ MY portafolio*/
   justify-content: center;
   flex-direction: column;
 }
-
 
 .container-card {
   display: flex;
@@ -464,13 +459,65 @@ MY portafolio*/
   padding: 10px 15px;
 }
 
-
-.container-derecha{
+.container-derecha {
   display: flex;
   justify-content: center;
 }
 
-.container-izquierda{
+.container-izquierda {
   display: flex;
   justify-content: center;
+}
+
+
+/*Comienzo con la seccion MY BLOG*/
+
+.myblog{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 200px;
+}
+
+.myblog h2{
+  font-size: 70px;
+}
+
+.myblog p{
+  color: var(--textcolorsecu);
+  letter-spacing: 3px;
+  font-size: 15px;
+}
+
+.container-blog{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 300px;
+  gap: 50px;
+}
+
+.container-blog-card{
+  display: flex;
+  flex-direction: column;
+justify-content: space-around;
+  height: 450px;
+  width: 400px;
+  border: 1px solid black;
+  padding: 0px 50px;
+  border-radius: 10px;
+
+}
+
+.container-blog-card img{
+  position: relative;
+  height: 220px;
+  width: 340px;
+  border-radius: 2%;
+  object-fit: cover;
+}
+
+.myblog-span{
+  display: flex;
+  justify-content: space-between;
 }
