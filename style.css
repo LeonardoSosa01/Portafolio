@@ -268,7 +268,7 @@ MY portafolio*/
 
 .card-myporta {
   display: flex;
-flex-direction: column;
+  flex-direction: column;
   height: 350px;
   width: 400px;
   border-style: none;
@@ -276,7 +276,6 @@ flex-direction: column;
   box-shadow: 5px 5px 25px 0px #d2d7dd;
   padding: 0 50px;
 }
-
 
 .main-text {
   display: flex;
@@ -286,7 +285,7 @@ flex-direction: column;
 
 .main-text p {
   display: flex;
-align-items: center;
+  align-items: center;
   color: var(--textcolorsecu);
   font-size: 15px;
   font-family: kanit;
@@ -305,7 +304,6 @@ align-items: center;
   flex-direction: column;
   padding-top: 50px;
 }
-
 
 .primer-grupo-mp {
   display: flex;
@@ -582,17 +580,16 @@ align-items: center;
   flex-direction: column;
   height: 450px;
   width: 400px;
-  padding: 0px 50px;
+  padding: 0px 20px;
   border-radius: 5%;
-  box-shadow: 5px 5px 10px 10px rgba(210, 215, 221, 1);
+  box-shadow: 5px 10px 10px 5px rgba(210, 215, 221, 1);
 }
 
 .container-blog-card img {
   position: relative;
-  bottom: 55px;
-  right: 20px;
+  bottom: 20px;
   height: 220px;
-  width: 340px;
+  width: 360px;
   border-radius: 5%;
   object-fit: cover;
 }
@@ -600,8 +597,192 @@ align-items: center;
 .myblog-span {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 10px;
 }
 
-.myblog-span .blog-color{
+.myblog-span .blog-color {
   color: var(--textcolorsecu);
 }
+
+/*Comienzo con la seccion CONTACT WITH ME*/
+
+
+.todo-contacto {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.main-contacto p {
+  color: var(--textcolorsecu);
+  font-size: 20px;
+  font-family: kanit;
+}
+
+.main-contacto h2 {
+  font-size: 70px;
+  font-weight: 500;
+  font-family: kanit;
+}
+
+.amboslados-contacto {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+
+/*LADO IZQUIERDO MY CONTACTO*/
+.izq-contacto {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 79vh;
+  gap: 10px;
+  padding: 30px 30px 0px 30px;
+  border-radius: 10px;
+  box-shadow: 5px 10px 10px 5px rgba(210, 215, 221, 1), 50px 5px 5px 5px white;
+  background-color: #E7ECEF;
+  font-weight: 500;
+  font-family: kanit;
+  margin-left: 10%;
+}
+
+.izq-contacto img{
+height: 320px;
+width: 100%;
+border-top-right-radius: 5%;
+border-top-left-radius: 5%;
+object-fit: cover;
+}
+
+.izq-contacto h3{
+  font-family: kanit;
+  font-size: 35px;
+}
+
+.icon-content1-contacto{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.icon-content1-contacto p{
+  padding: 20px 0px;
+}
+
+.iconos1-contacto a{
+  text-decoration: none;
+  color: var(--textcolorpri);
+  height: 56px;
+  width: 56px;
+  box-shadow: 2px 2px 20px 5px #bfc4cc;
+  margin: 15px 15px;
+  padding: 20px 25px;
+  border-radius: 10%;
+}
+
+/*LADO DERECHO MY CONTACTO*/
+.der-contacto {
+  display: flex;
+  flex-direction: column;
+ background-color: #E7ECEF;
+ width: 40%;
+height: 79vh;
+border-radius: 10px;
+box-shadow: 5px 10px 10px 5px rgba(210, 215, 221, 1);
+margin-right: 10%;
+}
+
+.namephone-contacto{
+  display: flex;
+  justify-content: space-between;
+padding: 30px 30px 0px 30px;
+width: 100%;
+}
+
+.namephone-contacto input{
+  padding: 15px 60px; 
+
+}
+
+
+.name-contacto{
+  display: flex;
+flex-direction: column;
+}
+
+.phone-contacto{
+  display: flex;
+  flex-direction: column;
+}
+
+.restoformulario-contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 0px 30px 30px 30px;
+}
+
+label{
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 10px
+}
+
+input, textarea{
+padding: 15px 20px; 
+border-radius: 5px;
+margin-bottom: 20px;
+background-color: white;
+border: 0;
+border: 2px solid #D8DADB;
+}
+
+textarea {
+  padding: 50px 50px; 
+}
+
+.der-contacto button{
+  font-size: 15px;
+  border: 0;
+  border-radius: 5px;
+ background-color: var(--textcolorsecu);
+ color: white;
+ font-weight: 400;
+ padding: 20px;
+ 
+}
+
+/*ESTO ES EL FOOTER*/
+.footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 200px;
+}
+
+.footer img{
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+
+.footer h2{
+  font-family: kanit;
+}
+
+.footer p{
+  font-family: kanit;
+}
+
+
+
+/*MEDIA QUERY*/
