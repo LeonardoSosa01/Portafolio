@@ -580,7 +580,6 @@ align-items: center;
 .container-blog-card {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
   height: 450px;
   width: 400px;
   padding: 0px 50px;
@@ -590,11 +589,11 @@ align-items: center;
 
 .container-blog-card img {
   position: relative;
-  bottom: 40px;
-  left: 10px;
+  bottom: 55px;
+  right: 20px;
   height: 220px;
   width: 340px;
-  border-radius: 2%;
+  border-radius: 5%;
   object-fit: cover;
 }
 
