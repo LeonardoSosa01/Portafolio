@@ -340,6 +340,7 @@ MY portafolio*/
   justify-content: center;
   gap: 50px;
   padding-bottom: 50px;
+  padding-bottom: 150px;
 }
 
 .ambos-grupo-mp .card-myporta {
@@ -663,8 +664,8 @@ MY portafolio*/
 .izq-contacto {
   display: flex;
   flex-direction: column;
-  width: 30%;
-  height: 79vh;
+  width: 50%;
+  height: 50%;
   gap: 10px;
   padding: 30px 30px 0px 30px;
   border-radius: 10px;
@@ -694,18 +695,22 @@ MY portafolio*/
   gap: 10px;
 }
 
+.iconos1-contacto {
+  display: flex;
+  padding-bottom: 50px;
+}
+
 .icon-content1-contacto p {
-  padding: 20px 0px;
+  padding-top: 20px;
 }
 
 .iconos1-contacto a {
+  align-items: center;
   text-decoration: none;
   color: var(--textcolorpri);
-  height: 56px;
-  width: 56px;
   box-shadow: 2px 2px 20px 5px #bfc4cc;
-  margin: 15px 15px;
-  padding: 20px 25px;
+  margin: 15px;
+  padding: 20px;
   border-radius: 10%;
 }
 
@@ -714,8 +719,8 @@ MY portafolio*/
   display: flex;
   flex-direction: column;
   background-color: #e7ecef;
-  width: 40%;
-  height: 79vh;
+  width: 50%;
+  height: 50%;
   border-radius: 10px;
   box-shadow: 5px 10px 10px 5px rgba(210, 215, 221, 1);
   margin-right: 10%;
@@ -913,19 +918,170 @@ textarea {
 
   /*MY PORTAFOLIO*/
 
+  .myportafolio {
+    display: flex;
+    flex-direction: column;
+  }
+
   .primer-grupo-mp {
-    display: block;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
   }
 
   .segundo-grupo-mp {
-    display: block;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
   }
-}
 
+  /*MY RESUME*/
+
+  .myresume-main {
+    padding-bottom: 50px;
+  }
+
+  .container-full-ambos {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .container-full-izq {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid var(--textcolorpri);
+    box-shadow: 5px 15px 25px 15px #d2d7dd;
+    border-radius: 10px;
+    justify-content: center;
+  }
+
+  .container-full-der {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid var(--textcolorpri);
+    box-shadow: 5px 15px 25px 15px #d2d7dd;
+    border-radius: 10px;
+    justify-content: center;
+  }
+
+  .container-card {
+    padding-left: 0px;
+  }
+
+  .card-my {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-top: 2px solid var(--textcolorpri);
+    border-radius: 0px;
+    box-shadow: none;
+    margin: 0px;
+  }
+
+  .my-botones,
+  .container-lineas,
+  .palito,
+  .palito-der {
+    display: none;
+  }
+
+  /*MY BLOG*/
+  .myblog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container-blog {
+    display: block;
+    flex-direction: column;
+  }
+
+  .container-blog-card {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    border-radius: 5%;
+    box-shadow: 5px 10px 10px 5px rgba(210, 215, 221, 1);
+  }
+
+  .container-blog-card img {
+    position: none;
+    bottom: 0px;
+    top: 20px;
+    border-radius: 5%;
+    object-fit: cover;
+  }
+
+  /*CONTACT WITH ME*/
+
+  .amboslados-contacto {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .izq-contacto {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0px;
+    padding: 30px 30px 0px 30px;
+    border-radius: 10px;
+    margin-left: 0px;
+    width: 90%;
+  }
+
+  .der-contacto {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 0px;
+    margin-right: 0px;
+    width: 90%;
+  }
+
+  .namephone-contacto {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  /*ESTO ES EL FOOTER*/
+  .footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 200px;
+  }
+
+  .footer img {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+  }
+
+  .footer h2 {
+    font-size: 50px;
+    font-family: kanit;
+  }
+
+  .footer p {
+    font-size: 40px;
+    font-family: kanit;
+  }
+
+  .footer span {
+    font-size: 20px;
+    font-family: kanit;
+  }
+}
 /*EJEMPLO DE RESOLUCION PARA CELULARES*/
 @media (max-width: 390px) {
   .banner {
@@ -952,5 +1108,116 @@ textarea {
   .banner-res390px h2 {
     font-size: 40px;
     color: var(--textcolorpri);
+  }
+
+  /*MY RESUME PARA CELULARES*/
+  .myresume-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .container-full-ambos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+  }
+
+  .container-full-izq {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border: 2px solid var(--textcolorpri);
+    box-shadow: 5px 15px 25px 15px #d2d7dd;
+    border-radius: 10px;
+    width: 90%;
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+    right: 7px;
+  }
+
+  .container-full-der {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 90%;
+    border: 2px solid var(--textcolorpri);
+    box-shadow: 5px 15px 25px 15px #d2d7dd;
+    border-radius: 10px;
+    right: 7px;
+    position: relative;
+  }
+
+  .card-my {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    border-top: 2px solid var(--textcolorpri);
+    padding: 0px;
+    margin: 0px;
+    border-radius: 0px;
+    box-shadow: none;
+  }
+
+  .my-botones,
+  .container-lineas,
+  .palito,
+  .palito-der {
+    display: none;
+  }
+
+  /*MY BLOG PARA CELULARES*/
+  .myblog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-top: 200px;
+  }
+
+  .myblog-span {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    gap: 0px;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .container-blog {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    gap: 50px;
+  }
+
+  /*CONTACT WITH ME PARA CELULARES*/
+  .main-contacto {
+    display: block;
+    justify-content: center;
+    text-align: center;
+  }
+
+  /*FOOTER PARA CELULARES*/
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 90%;
   }
 }
