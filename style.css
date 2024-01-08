@@ -20,7 +20,8 @@
   padding: 30px 30px;
 }
 
-.logo {
+.logo p {
+  display: flex;
   font-size: 25px;
   padding-left: 15%;
   font-family: Kanit;
@@ -28,7 +29,7 @@
 
 .nav-opciones {
   display: flex;
-  align-items: center;
+  justify-content: space-between;
 }
 
 .nav-items a {
@@ -56,26 +57,49 @@
   font-family: Kanit;
 }
 
+.mostrar-menu,
+.esconder-menu {
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+  transition: 0.4s;
+}
+
+.mostrar-menu {
+  order: 1;
+}
+
+#check {
+  display: none;
+}
+
 /* main */
 .main {
   display: flex;
-  max-width: 100%;
 }
 
 .container {
   display: flex;
   justify-content: space-between;
   padding-top: 100px;
-  max-width: 80%;
+  width: 90%;
 }
 
 .left-content {
   display: flex;
   flex-direction: column;
+  width: 50%;
 }
 
 .right-content {
+  display: flex;
   box-shadow: 0px 2px 5px 2px #d2d7dd;
+  width: 40%;
+}
+
+.right-content img {
+  width: 100%;
+  height: 100%;
 }
 
 .welcome {
@@ -187,8 +211,7 @@ WHAT I DO*/
 
 .banner {
   width: 100%;
-  text-align: start;
-  padding-left: 100px;
+  text-align: center;
 }
 .banner H2 {
   font-size: 80px;
@@ -606,7 +629,6 @@ MY portafolio*/
 
 /*Comienzo con la seccion CONTACT WITH ME*/
 
-
 .todo-contacto {
   display: flex;
   flex-direction: column;
@@ -637,7 +659,6 @@ MY portafolio*/
   gap: 50px;
 }
 
-
 /*LADO IZQUIERDO MY CONTACTO*/
 .izq-contacto {
   display: flex;
@@ -648,36 +669,36 @@ MY portafolio*/
   padding: 30px 30px 0px 30px;
   border-radius: 10px;
   box-shadow: 5px 10px 10px 5px rgba(210, 215, 221, 1), 50px 5px 5px 5px white;
-  background-color: #E7ECEF;
+  background-color: #e7ecef;
   font-weight: 500;
   font-family: kanit;
   margin-left: 10%;
 }
 
-.izq-contacto img{
-height: 320px;
-width: 100%;
-border-top-right-radius: 5%;
-border-top-left-radius: 5%;
-object-fit: cover;
+.izq-contacto img {
+  height: 320px;
+  width: 100%;
+  border-top-right-radius: 5%;
+  border-top-left-radius: 5%;
+  object-fit: cover;
 }
 
-.izq-contacto h3{
+.izq-contacto h3 {
   font-family: kanit;
   font-size: 35px;
 }
 
-.icon-content1-contacto{
+.icon-content1-contacto {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.icon-content1-contacto p{
+.icon-content1-contacto p {
   padding: 20px 0px;
 }
 
-.iconos1-contacto a{
+.iconos1-contacto a {
   text-decoration: none;
   color: var(--textcolorpri);
   height: 56px;
@@ -692,33 +713,31 @@ object-fit: cover;
 .der-contacto {
   display: flex;
   flex-direction: column;
- background-color: #E7ECEF;
- width: 40%;
-height: 79vh;
-border-radius: 10px;
-box-shadow: 5px 10px 10px 5px rgba(210, 215, 221, 1);
-margin-right: 10%;
+  background-color: #e7ecef;
+  width: 40%;
+  height: 79vh;
+  border-radius: 10px;
+  box-shadow: 5px 10px 10px 5px rgba(210, 215, 221, 1);
+  margin-right: 10%;
 }
 
-.namephone-contacto{
+.namephone-contacto {
   display: flex;
   justify-content: space-between;
-padding: 30px 30px 0px 30px;
-width: 100%;
+  padding: 30px 30px 30px;
+  width: 100%;
 }
 
-.namephone-contacto input{
-  padding: 15px 60px; 
-
+.namephone-contacto input {
+  padding: 15px 40px;
 }
 
-
-.name-contacto{
+.name-contacto {
   display: flex;
-flex-direction: column;
+  flex-direction: column;
 }
 
-.phone-contacto{
+.phone-contacto {
   display: flex;
   flex-direction: column;
 }
@@ -730,34 +749,34 @@ flex-direction: column;
   padding: 0px 30px 30px 30px;
 }
 
-label{
+label {
   font-size: 15px;
   font-weight: 500;
-  margin-bottom: 10px
+  margin-bottom: 10px;
 }
 
-input, textarea{
-padding: 15px 20px; 
-border-radius: 5px;
-margin-bottom: 20px;
-background-color: white;
-border: 0;
-border: 2px solid #D8DADB;
+input,
+textarea {
+  padding: 15px 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  background-color: white;
+  border: 0;
+  border: 2px solid #d8dadb;
 }
 
 textarea {
-  padding: 50px 50px; 
+  padding: 50px 50px;
 }
 
-.der-contacto button{
+.der-contacto button {
   font-size: 15px;
   border: 0;
   border-radius: 5px;
- background-color: var(--textcolorsecu);
- color: white;
- font-weight: 400;
- padding: 20px;
- 
+  background-color: var(--textcolorsecu);
+  color: white;
+  font-weight: 400;
+  padding: 20px;
 }
 
 /*ESTO ES EL FOOTER*/
@@ -769,20 +788,169 @@ textarea {
   padding: 200px;
 }
 
-.footer img{
+.footer img {
   height: 60px;
   width: 60px;
   border-radius: 50%;
 }
 
-.footer h2{
+.footer h2 {
   font-family: kanit;
 }
 
-.footer p{
+.footer p {
   font-family: kanit;
 }
 
-
+/*elemento oculto para MEDIA   QUERY*/
+.banner-res390px {
+  display: none;
+}
 
 /*MEDIA QUERY*/
+/*EJEMPLO DE RESOLUCION PARA TABLETS*/
+@media (max-width: 768px) {
+  /*Header*/
+  .mostrar-menu,
+  .esconder-menu {
+    display: block;
+  }
+
+  .esconder-menu {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+  }
+
+  .nav-items {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    right: -100%;
+    text-align: center;
+    z-index: 100;
+    transition: 0.8s;
+    background-color: white;
+  }
+
+  .nav-items a {
+    display: block;
+    padding: 20px;
+  }
+
+  .esconder-menu {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+  }
+
+  :checked ~ .nav-items {
+    right: 0;
+  }
+
+  /*MAIN*/
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left-content {
+    width: 100%;
+    align-items: center;
+    align-content: center;
+  }
+
+  .right-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  /*WHAT I DO*/
+  .loquehago {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .banner {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .banner h2 {
+    font-size: 50px;
+    white-space: pre;
+  }
+
+  .primer-grupo {
+    display: block;
+  }
+
+  .primer-grupo .card {
+    margin: 50px;
+  }
+
+  .segundo-grupo {
+    display: block;
+  }
+
+  .segundo-grupo .card {
+    margin: 50px;
+  }
+
+  /*MY PORTAFOLIO*/
+
+  .primer-grupo-mp {
+    display: block;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .segundo-grupo-mp {
+    display: block;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/*EJEMPLO DE RESOLUCION PARA CELULARES*/
+@media (max-width: 390px) {
+  .banner {
+    display: none;
+  }
+
+  .loquehago {
+    padding: 0px;
+  }
+
+  .banner-res390px {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: -200px;
+  }
+
+  .banner-res390px p {
+    color: var(--textcolorsecu);
+    font-size: 20px;
+  }
+
+  .banner-res390px h2 {
+    font-size: 40px;
+    color: var(--textcolorpri);
+  }
+}
