@@ -732,7 +732,7 @@ MY portafolio*/
 }
 
 .namephone-contacto input {
-  padding: 15px 40px;
+  padding: 15px 35px;
 }
 
 .name-contacto {
@@ -811,6 +811,40 @@ textarea {
 }
 
 /*MEDIA QUERY*/
+/*EJEMPLO DE RESOLUCION 1200px*/
+@media (max-width: 1200px) {
+  .mostrar-menu,
+  .esconder-menu {
+    display: block;
+  }
+
+  .esconder-menu {
+    position: absolute;
+    top: 10px;
+    right: 190px;
+  }
+
+  .nav-items {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    right: -100%;
+    text-align: center;
+    z-index: 100;
+    transition: 0.8s;
+    background-color: white;
+  }
+
+  .nav-items a {
+    display: block;
+    padding: 20px;
+  }
+
+  :checked ~ .nav-items {
+    right: 0px;
+  }
+}
+/*
 /*EJEMPLO DE RESOLUCION PARA TABLETS*/
 @media (max-width: 768px) {
   /*Header*/
@@ -839,12 +873,6 @@ textarea {
   .nav-items a {
     display: block;
     padding: 20px;
-  }
-
-  .esconder-menu {
-    position: absolute;
-    top: 40px;
-    right: 40px;
   }
 
   :checked ~ .nav-items {
@@ -1155,7 +1183,7 @@ textarea {
     padding: 0px;
     margin: 0px;
     position: relative;
-    right: 7px;
+    right: 0px;
   }
 
   .container-full-der {
@@ -1167,14 +1195,13 @@ textarea {
     border: 2px solid var(--textcolorpri);
     box-shadow: 5px 15px 25px 15px #d2d7dd;
     border-radius: 10px;
-    right: 7px;
+    right: 0px;
     position: relative;
   }
 
   .card-my {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     text-align: center;
     width: 100%;
     border-top: 2px solid var(--textcolorpri);
@@ -1182,6 +1209,14 @@ textarea {
     margin: 0px;
     border-radius: 0px;
     box-shadow: none;
+  }
+
+  .my-span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+    padding-right: 10px;
   }
 
   .my-botones,
@@ -1222,6 +1257,16 @@ textarea {
     display: block;
     justify-content: center;
     text-align: center;
+  }
+
+  .namephone-contacto {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+  }
+
+  .namephone-contacto input {
+    padding: 15px 30px;
   }
 
   .main-contacto h2 {
