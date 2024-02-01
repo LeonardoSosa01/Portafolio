@@ -4,7 +4,6 @@ function saludo() {
 }
 setInterval(saludo, 1000); // 1000 = 1 segundo
 
+setTimeout();
 
-
-
-setTimeout()
+//slider
