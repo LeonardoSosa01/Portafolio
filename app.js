@@ -1,9 +1,6 @@
-// SetInterval y SetTimeout
-function saludo() {
-  console.log("Hola");
+// ACTIVIDAD DOM con javascript 
+// Primer punto imagen, cambia cuando pases el mouse
+function change1()
+{
+  document.getElementById("img1").src = "mujermain2.jpg"
 }
-setInterval(saludo, 1000); // 1000 = 1 segundo
-
-setTimeout();
-
-//slider
