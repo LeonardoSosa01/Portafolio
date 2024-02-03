@@ -101,8 +101,8 @@
   width: 100%;
 }*/
 
-#img1{
-width: 100%;
+#img1 {
+  width: 100%;
 }
 
 .welcome {
@@ -236,16 +236,6 @@ WHAT I DO*/
   gap: 50px;
 }
 
-.card {
-  height: 350px;
-  width: 400px;
-  display: flex;
-  justify-content: center;
-  border-style: none;
-  border-radius: 20px;
-  box-shadow: 5px 5px 25px 0px #d2d7dd;
-  padding: 0 50px;
-}
 .card h3 {
   text-align: center;
   font-size: 20px;
@@ -261,6 +251,57 @@ WHAT I DO*/
 .loquehago .card i {
   color: var(--textcolorsecu);
   margin: 20px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  flex: 0 0 auto; /* Permite que las tarjetas tengan su propio ancho */
+  height: 350px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  border-style: none;
+  border-radius: 20px;
+  box-shadow: 5px 5px 25px 0px #d2d7dd;
+  padding: 0 50px;
+}
+
+.slider-container {
+  overflow: hidden;
+  width: 30%; /* Establece un ancho fijo para mostrar solo una parte */
+  margin: 0 auto; /* Centra el contenedor */
+}
+
+.cards-row {
+  display: flex;
+  transition: transform 0.5s;
+}
+
+.prev-btn,
+.next-btn {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: var(--textcolorsecu);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+  opacity: 0.8;
+}
+
+.slider-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  gap: 50px;
 }
 
 /* seccion de tarjetas 
@@ -349,7 +390,7 @@ MY portafolio*/
 .ambos-grupo-mp .card-myporta {
   display: flex;
   justify-content: space-between;
-  height: 450px;
+  height: 600px;
   width: 400px;
   padding: 30px;
 }
@@ -361,6 +402,36 @@ MY portafolio*/
   border-top-right-radius: 5%;
   border-top-left-radius: 5%;
   object-fit: cover;
+}
+
+.overlay-myporta {
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  padding: 20px;
+}
+
+.saber-mas-btn {
+  margin-top: 10px;
+}
+
+.cerrar-btn,
+.github-btn {
+  background-color: #f44336;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.cerrar-btn:hover {
+  opacity: 0.8;
 }
 
 /* SECCION MY RESUME*/
@@ -726,6 +797,7 @@ MY portafolio*/
   border-radius: 10px;
   box-shadow: 5px 10px 10px 5px rgba(210, 215, 221, 1);
   margin-right: 10%;
+  padding-bottom: 90px;
 }
 
 .namephone-contacto {
@@ -735,7 +807,7 @@ MY portafolio*/
 }
 
 .namephone-contacto input {
-  padding: 15px 35px;
+  padding: 15px 15px;
 }
 
 .name-contacto {
@@ -763,7 +835,7 @@ label {
 
 input,
 textarea {
-  padding: 15px 20px;
+  padding: 15px 10px;
   border-radius: 5px;
   margin-bottom: 20px;
   background-color: white;
@@ -772,7 +844,7 @@ textarea {
 }
 
 textarea {
-  padding: 50px 50px;
+  padding: 10px 10px;
 }
 
 .der-contacto button {
@@ -783,6 +855,16 @@ textarea {
   color: white;
   font-weight: 400;
   padding: 20px;
+}
+
+#mensaje-exito {
+  display: none;
+  color: green;
+  display: flex;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 20px;
+  font-family: kanit;
 }
 
 /*ESTO ES EL FOOTER*/
