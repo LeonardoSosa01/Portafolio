@@ -254,29 +254,27 @@ WHAT I DO*/
 }
 
 .card {
-  border: 1px solid #ccc;
+  border: 2px solid black;
   padding: 10px;
-  margin: 10px;
-  flex: 0 0 auto; /* Permite que las tarjetas tengan su propio ancho */
-  height: 350px;
+  flex: 0 0 auto;
+  height: 400px;
   width: 400px;
   display: flex;
   justify-content: center;
   border-style: none;
-  border-radius: 20px;
-  box-shadow: 5px 5px 25px 0px #d2d7dd;
   padding: 0 50px;
 }
 
 .slider-container {
   overflow: hidden;
-  width: 30%; /* Establece un ancho fijo para mostrar solo una parte */
-  margin: 0 auto; /* Centra el contenedor */
+  max-width: 400px;
+  margin: 0 auto;
 }
 
-.cards-row {
+.cards-fila {
   display: flex;
   transition: transform 0.5s;
+  margin: 0;
 }
 
 .prev-btn,

@@ -42,11 +42,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // cuarto punto, hacer un slider en what i do
 document.addEventListener("DOMContentLoaded", function () {
-  const cardsRow = document.querySelector(".cards-row");
+  const cardsRow = document.querySelector(".cards-fila");
   const prevBtn = document.querySelector(".prev-btn");
   const nextBtn = document.querySelector(".next-btn");
 
-  let currentIndex = 0;
+  let cartaActual = 0;
 
   prevBtn.addEventListener("click", function () {
     moveSlider(-1);
@@ -58,16 +58,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function moveSlider(direction) {
     const cardWidth = document.querySelector(".card").offsetWidth;
-    currentIndex += direction;
+    cartaActual += direction;
 
-    // Verifica si ha llegado al final o al principio del slider
-    if (currentIndex >= cardsRow.children.length) {
-      currentIndex = 0; // Vuelve a la primera tarjeta
-    } else if (currentIndex < 0) {
-      currentIndex = cardsRow.children.length - 1; // Va a la última tarjeta
+    if (cartaActual >= cardsRow.children.length) {
+      cartaActual = 0; 
+    } else if (cartaActual < 0) {
+      cartaActual = cardsRow.children.length - 1; 
     }
 
-    const translateValue = -currentIndex * cardWidth;
+    const translateValue = -cartaActual * cardWidth;
     cardsRow.style.transform = `translateX(${translateValue}px)`;
   }
 });
