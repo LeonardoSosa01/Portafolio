@@ -97,10 +97,6 @@
   width: 40%;
 }
 
-/*.right-content img {
-  width: 100%;
-}*/
-
 #img1 {
   width: 100%;
 }
@@ -254,21 +250,19 @@ WHAT I DO*/
 }
 
 .card {
-  border: 2px solid black;
+  border: 2px solid var(--textcolorpri);
   padding: 10px;
   flex: 0 0 auto;
-  height: 400px;
+  height: 300px;
   width: 400px;
   display: flex;
   justify-content: center;
-  border-style: none;
   padding: 0 50px;
 }
 
 .slider-container {
   overflow: hidden;
-  max-width: 400px;
-  margin: 0 auto;
+  max-width: 800px;
 }
 
 .cards-fila {

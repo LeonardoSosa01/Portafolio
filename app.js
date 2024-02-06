@@ -9,7 +9,7 @@ function change2() {
 }
 
 // Segundo punto, agregar ver mas, mas texto y dos botones, un exit y un link al repo
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("click", function () {
   const saberMasBtns = document.querySelectorAll(".saber-mas-btn");
   const overlayCloseBtns = document.querySelectorAll(".cerrar-btn");
   const overlayContainers = document.querySelectorAll(".overlay-myporta");
@@ -61,9 +61,9 @@ document.addEventListener("DOMContentLoaded", function () {
     cartaActual += direction;
 
     if (cartaActual >= cardsRow.children.length) {
-      cartaActual = 0; 
+      cartaActual = 0;
     } else if (cartaActual < 0) {
-      cartaActual = cardsRow.children.length - 1; 
+      cartaActual = cardsRow.children.length - 1;
     }
 
     const translateValue = -cartaActual * cardWidth;
